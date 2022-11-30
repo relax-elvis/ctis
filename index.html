@@ -106,7 +106,7 @@
 						</div>
 						<div class="menu">
 							<div class="block-tel">
-								<a class="phone" href="tel:937267622"><img src="img/icons/icon-tel.webp" alt="icon-tel"></a>
+								<a class="phone" href="tel:937267622"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m23.533 19.084-2.66-1.774-2.366-1.577a1.048 1.048 0 0 0-1.406.229l-1.464 1.881c-.314.409-.88.526-1.33.276-.994-.552-2.168-1.072-4.76-3.667-2.59-2.594-3.114-3.765-3.666-4.758a1.042 1.042 0 0 1 .276-1.33l1.881-1.465c.433-.336.532-.95.229-1.406L6.738 3.2 4.916.467a1.048 1.048 0 0 0-1.41-.318L1.404 1.41A2.568 2.568 0 0 0 .238 2.92c-.575 2.095-.69 6.717 6.717 14.125 7.408 7.408 12.03 7.292 14.126 6.717a2.567 2.567 0 0 0 1.509-1.166l1.26-2.102c.288-.48.149-1.1-.317-1.41z" fill="#FFF" fill-rule="nonzero"/></svg></a>
 							</div>
 							<div class="block-btn">
 								<a class="btn btn-light" href="#contact">Solicitar información</a>
@@ -589,7 +589,7 @@
 								</div>
 								<article>
 									<p>
-										Desde hace muchos años, mi experiencia siempre ha sido muy buena. Un buen servicio y un buen trato por parte de todos los profesionales de la empresa. Recomendable 100%.
+										Desde hace muchos años, mi experiencia siempre ha sido muy buena. Un buen servicio y un buen trato por parte de todos los profesionales de la empresa. Recomendable 100%
 									</p>
 								</article>
 							</div>
@@ -602,7 +602,7 @@
 									</div>
 									<div>
 										<h3>
-											Laura Oliva Falcó
+											Xavi Susin
 										</h3>
 										<div class="rating">
 											<span class="icon icon-star"></span>
@@ -615,7 +615,7 @@
 								</div>
 								<article>
 									<p>
-										Desde hace muchos años, mi experiencia siempre ha sido muy buena. Un buen servicio y un buen trato por parte de todos los profesionales de la empresa. Recomendable 100%.
+										El trato fue muy bueno, proporcionándome una solución a mi problema de forma rápida y efectiva. Totalmente recomendable para mantenimiento informático de empresas.
 									</p>
 								</article>
 							</div>
@@ -628,7 +628,7 @@
 									</div>
 									<div>
 										<h3>
-											Laura Oliva Falcó
+											Marc DoubleSword
 										</h3>
 										<div class="rating">
 											<span class="icon icon-star"></span>
@@ -641,7 +641,7 @@
 								</div>
 								<article>
 									<p>
-										Desde hace muchos años, mi experiencia siempre ha sido muy buena. Un buen servicio y un buen trato por parte de todos los profesionales de la empresa. Recomendable 100%.
+										Excelente servicio, buena comunicación en todo momento, y un trato muy amable y cercano. Totalmente recomendado 👍🏻
 									</p>
 								</article>
 							</div>
@@ -682,35 +682,34 @@
 							</div>
 							<!-- /ctis_contact__left -->
 							<!-- ctis_contact__right -->
-							<div class="ctis_contact__right">
+							<div id="form" class="ctis_contact__right">
 								<form class="form" action="" method="POST">
 									<div class="group">
 										<div class="field">
-											<input type="text" name="name" placeholder="Nombre (Requerido)" required="">
+											<input id="name" type="text" name="name" placeholder="Nombre (Requerido)" required="">
 										</div>
 										<div class="field">
-											<input type="email" name="email" placeholder="E-mail (Requerido)" required="">
+											<input id="email" type="email" name="email" placeholder="E-mail (Requerido)" required="">
 										</div>
 									</div>
 									<div class="group">
 										<div class="field">
-											<input type="tel" name="phone" placeholder="Teléfono (Requerido)" required="">
+											<input id="phone" type="tel" name="phone" placeholder="Teléfono (Requerido)" required="">
 										</div>
 										<div class="field">
-											<input type="text" name="hora_contact" placeholder="Hora de contacto" required="">
+											<input id="hora_contacto" type="text" name="hora_contact" placeholder="Hora de contacto" required="">
 										</div>
 									</div>
 									<div class="field">
-										<textarea placeholder="Comentarios"></textarea>
+										<textarea id="comments" placeholder="Comentarios"></textarea>
 									</div>
 									<div class="group checkbox">
 										<div class="field">
 											<div class="privacida">
 												<label>
-													<input type="checkbox" name="privacida">
-													He leído y acepto las 
+													<input type="checkbox" name="check" required="">
+													<span>He leído y acepto las</span> <a href="politica-prevasidad.html">condiciones de privacidad</a>
 												</label>
-												<a href="#">condiciones de privacidad</a>
 											</div>
 										</div>
 										<div class="field">
@@ -720,6 +719,21 @@
 										</div>
 									</div>
 								</form>
+								<div style="display:none;" class="contact-form__success text-center">
+									<div class="ok"><img src="img/check-green-icon.webp" alt=""></div>
+									<p>
+										<b>Su mensaje se ha enviado con éxito.</b><br>
+										En breve nos pordemos en contacto contigo.
+									</p>
+								</div>
+								<div style="display:none;" class="contact-form__error text-center">
+									<div class="error"><img src="img/error-alert.webp" alt=""></div>
+									<p>
+										<b>Ups algo salió mal.</b><br>
+										Intentalo de nuevo más tarde.
+									</p>
+									<button class="btn btn-orange">Volver a intentar</button>
+								</div>
 							</div>
 							<!-- /ctis_contact__right -->
 						</div>
@@ -777,27 +791,27 @@
 							</div>
 							<!-- /item -->
 							<!-- item -->
-							<div class="item">
+							<div class="item h-part-mobile">
 								<img src="img/partners/samsung.webp" alt="samsung">
 							</div>
 							<!-- /item -->
 							<!-- item -->
-							<div class="item">
+							<div class="item h-part-table">
 								<img src="img/partners/synology.webp" alt="synology">
 							</div>
 							<!-- /item -->
 							<!-- item -->
-							<div class="item">
+							<div class="item h-part-table">
 								<img src="img/partners/logitech.webp" alt="logitech">
 							</div>
 							<!-- /item -->
 							<!-- item -->
-							<div class="item">
+							<div class="item h-part-table">
 								<img src="img/partners/epson.webp" alt="epson">
 							</div>
 							<!-- /item -->
 							<!-- item -->
-							<div class="item">
+							<div class="item h-part-table">
 								<img src="img/partners/asus.webp" alt="asus">
 							</div>
 							<!-- /item -->
@@ -1043,7 +1057,7 @@
 									<a href="politica-prevasidad.html">Política de Privacidad</a>
 								</li>
 								<li>
-									<a href="politica-de-cookie.html">Política de Cookies</a>
+									<a href="aviso-de-cookie.html">Política de Cookies</a>
 								</li>
 							</ul>
 						</div>
@@ -1060,6 +1074,8 @@
 		</div>
 	</div>
 	<script src="js/scripts.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/contactform.js"></script>
 	<!-- <script src="js/es.js"></script> -->
 	<!-- <div class="mobile fixed-button">
 		<div class="block-btn">
